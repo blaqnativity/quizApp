@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { questions } from "../questionsData";
 import Options from "./Options";
+import Result from "./Result"; // ⬅️ Import the new component
 
 const Question = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,12 +14,10 @@ const Question = () => {
   };
 
   const handleNext = () => {
-    // update score if correct
     if (selectedOption === questions[currentQuestion].answer) {
       setScore((prev) => prev + 1);
     }
 
-    // move to next or finish
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion((prev) => prev + 1);
       setSelectedOption(null);
@@ -43,13 +42,11 @@ const Question = () => {
 
   if (isQuizFinished) {
     return (
-      <div className="text-center mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Quiz Finished!</h2>
-      
-        <p className="text-lg">Your Score: {score} / {questions.length}</p>
-
-        <button className="bg-blue-500 cursor-pointer py-2 px-5 rounded-md text-white mt-4" onClick={handleReset}>Reset</button>
-      </div>
+      <Result
+        score={score}
+        totalQuestions={questions.length}
+        onReset={handleReset}
+      />
     );
   }
 

@@ -5,14 +5,14 @@ export const questions = [
     answer: "Movie at home",
   },
   {
-    question: "How do I usually show I care?",
+    question: "What name would we agree on for a first child?",
     options: [
-      "Buying gifts",
-      "Words of affirmation",
-      "Acts of service",
-      "Physical touch",
+      "Salem",
+      "Oluwashindara",
+      "Shiloh",
+      "Wonder",
     ],
-    answer: "Acts of service",
+    answer: "Salem",
   },
   {
     question: "Which of these do I fear the most?",
@@ -21,14 +21,14 @@ export const questions = [
   },
   {
     question: "If I could travel anywhere with you, where would I choose?",
-    options: ["Paris", "Bali", "New York", "Tokyo"],
+    options: ["Paris", "Morocco", "Kentucky", "Ireland"],
     answer: "Bali",
   },
   {
     question: "What habit of mine do you think I want to change?",
     options: [
-      "Overthinking",
-      "Sleeping late",
+      "Too afraid to try new things",
+      "Snubbing people",
       "Snacking too much",
       "Procrastinating",
     ],
@@ -36,7 +36,7 @@ export const questions = [
   },
   {
     question: "How do I like to be comforted when I'm upset?",
-    options: ["Left alone", "Cuddles", "Talking it out", "Food"],
+    options: ["Left alone", "Cuddles", "Talking it out", "Knacks"],
     answer: "Talking it out",
   },
   {
@@ -44,15 +44,15 @@ export const questions = [
     options: [
       "Sleeping in",
       "Exploring the city",
-      "Binge-watching",
+      "Staying home with you",
       "Cooking together",
     ],
-    answer: "Binge-watching",
+    answer: "Staying home with you",
   },
   {
-    question: "What is one thing I can't live without?",
-    options: ["Phone", "Music", "You", "Food"],
-    answer: "You",
+    question: "What is one fruit I can't live without?",
+    options: ["Pineapples", "African cherry", "Mangoes", "Watermelon"],
+    answer: "Pineapples",
   },
   {
     question: "How do I usually handle stress?",
